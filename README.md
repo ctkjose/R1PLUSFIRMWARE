@@ -10,6 +10,7 @@ Optimized the code for the RAMPS/ATMEGA2560 and simple assumptions of the common
 
 Make modofications and hacks easier!!!!!
 
+Optimize for size and performance under Arduino's ATMEGA 2560.
 
 ## Boards ##
 
