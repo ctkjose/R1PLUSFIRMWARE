@@ -8,12 +8,14 @@
 
 /* Begin PBXFileReference section */
 		483F2B61232B127B00529C97 /* FIRMWARE */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FIRMWARE; sourceTree = "<group>"; };
+		483F2B62232B24FD00529C97 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		483F2B55232B11C100529C97 = {
 			isa = PBXGroup;
 			children = (
+				483F2B62232B24FD00529C97 /* README.md */,
 				483F2B61232B127B00529C97 /* FIRMWARE */,
 			);
 			sourceTree = "<group>";
