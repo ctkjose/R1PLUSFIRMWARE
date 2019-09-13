@@ -33,13 +33,13 @@ Code is build around common EPCOS 100K Thermistors for the Hot bed and extruder 
 
 ## G-Code ##
 
-This firmware includes a new g-code parser, that allows for parsing more complicated command syntax. The parser and gcode processing is completely new, the print job and processing is very modular and structured. 
+This firmware includes a new g-code parser, that allows for parsing more complicated command syntax. The parser and gcode processing is completely new. Everything is structured and compartmentalized. 
 
 G-CODE commands are implemented as function callbacks. We can register function pointers to a given G-CODE. Adding or modifying a G-CODE is easier and safer.
 
-The print job is now represented by a `state` struct that allows code on different parts of the firmware to easily get info about of the state of the printer and a print-job and interact with the current job.
+The print job is now represented by a `state` with all the key data and information in one place. This makes it much easier to manipulate our job in different parts of the firmware and allows for better implementation of pause and resume.
 
-A print-job is represented by an object that allows us to control and interact with the printer. It has clear and specific places to poll and update time critical events during a print job and hardware interrupts. So now we have a place to call hooks to update an LCD, read buttons, or update something. In addition we added basic HOOKS so we can add new functionality at given events. 
+A print-job is represented by an object that allows us to control and interact with the printer. It has clear and specific places to poll and update time critical events during a print job and hardware interrupts. So now we have a place to call hooks to update a LCD, read buttons, or update something. In addition we added basic HOOKS so we can add new functionality at given events. 
 
 Code is structured to allow for further work on streaming g-code from other sources (ideas in my head includes streaming with wifi, and thru SPI from another arduino acting as a controller.)
 
