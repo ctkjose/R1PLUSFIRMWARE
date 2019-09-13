@@ -2,7 +2,7 @@
 
 This is a rewrite of the original Marlin firmware that comes with ROBO3D's R1+  3D printers.
 
-The  objectives
+## The  objectives ##
 
 Create a small and simple firmware for basic Mendel/Cartesian printers build on top of RAMPS 1.4 (1.6) and Arduino ATMEGA 2560.  
 
@@ -13,7 +13,7 @@ Make modofications and hacks easier!!!!!
 
 ## Boards ##
 
-This firmware is exclusive for (RAMPS 1.4)[https://reprap.org/wiki/RAMPS_1.4]  boards and similar revisions including 1.6.  As the RAMPS board is build for the Arduino MEGA we are able to make a lot of clean up and optimizasion for this hardware combination.
+This firmware is exclusive for [RAMPS 1.4](https://reprap.org/wiki/RAMPS_1.4)  boards and similar revisions including 1.6.  As the RAMPS board is build for the Arduino MEGA we are able to make a lot of clean up and optimizasion for this hardware combination.
 
 ## Motion and Steppers ##
 
