@@ -1,6 +1,6 @@
 #  SRAMP  #
 
-This is a rewrite of the original Marlin firmware that comes with ROBO3D's R1+  3D printers. This project was born from the frustuation of trying to modify the firmware.
+This is a rewrite of the original [Marlin firmware](https://github.com/Robo3D/R1PlusMarlin) that comes with ROBO3D's R1+  3D printers. This project was born from the frustuation of trying to modify the firmware.
 
 ## The  objectives ##
 
