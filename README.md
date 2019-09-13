@@ -41,9 +41,17 @@ The print job is now represented by a `state` struct that allows code on differe
 
 A print-job is represented by an object that allows us to control and interact with the printer. It has clear and specific places to poll and update time critical events during a print job and hardware interrupts. So now we have a place to call hooks to update an LCD, read buttons, or update something. In addition we added basic HOOKS so we can add new functionality at given events. 
 
+Code is structured to allow for further work on streaming g-code from other sources (ideas in my head includes streaming with wifi, and thru SPI from another arduino acting as a controller.)
+
+The firmware has a standarized and consistant way to report errors to the g-code sender, even when CURA/MatterControl have no support for it (mainly because ther is no standard!).
+
+(PS: Im also working on my own g-code sender and print scheduler).
+
 ## SD Card ##
 
 SD Card uses Arduino's built-in library for SPI SD-Cards. 
+
+SD Card printing is working. This code uses RepRapFirmware flavor of GCODE and does not support Marlin's `!` and `#` syntax.
 
 GCODE [`M20`](https://reprap.org/wiki/G-code#M20:_List_SD_card) supports JSON with the `S2` parameter just like RepRapFirmware.
 
