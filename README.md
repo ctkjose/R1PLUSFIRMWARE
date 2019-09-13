@@ -18,11 +18,11 @@ This firmware is exclusive for [RAMPS 1.4](https://reprap.org/wiki/RAMPS_1.4)  b
 
 ## Motion and Steppers ##
 
-This code uses the original motion and stepper control code with some extensive cleanup. The motion and stepper control code is from grbl. 
+This code uses the original motion and stepper control code with some extensive cleanup. The motion and stepper control code is originally from [grbl](https://github.com/grbl/grbl). 
 
 The `planner.cpp` has a lot of cleanup and optimizations for our particular hardware setup. 
 
-The firmware supports basix X, Y, Z (optional double z steppers). With up-to two extruders. Work on dual carriage/extruders is half-baked since I don't have a printer to test with. 
+The firmware supports basic X, Y, Z (optional double z steppers). With up-to two extruders. Work on dual carriage/extruders is half-baked since I don't have a printer to test with. 
 
 Endstops are hardwired to be at the origin of the axis with a negative direction. Z endstop is at bottom of axis. Enstop switches use pullup resistors.
 
@@ -30,11 +30,16 @@ Endstops are hardwired to be at the origin of the axis with a negative direction
 
 Code is based on the marlin's `temperature.cpp`, it is mainly a cleanup and optimizations for our hardware.
 
-Code is build around common EPCOS 100K Thermistors for the Hot bed and extruder [thermosistors](https://reprap.org/wiki/Thermistor).
+The code is build with two assumptions:
+
+1. The printer has a hot bed.
+2. EPCOS 100K (like) Thermistors are used for the hot bed and extruder [thermosistors](https://reprap.org/wiki/Thermistor).
 
 ## G-Code ##
 
 This firmware includes a new g-code parser, that allows for parsing more complicated command syntax. The parser and gcode processing is completely new. Everything is structured and compartmentalized. 
+
+A good G-CODE reference can be found [here](https://reprap.org/wiki/G-code), our flavor of G-CODE is more similar to RepRapFirmware and LinuxCNC.   
 
 G-CODE commands are implemented as function callbacks. We can register function pointers to a given G-CODE. Adding or modifying a G-CODE is easier and safer.
 
@@ -50,7 +55,7 @@ The firmware has a standarized and consistant way to report errors to the g-code
 
 ## SD Card ##
 
-SD Card uses Arduino's built-in library for SPI SD-Cards. 
+SD Card uses Arduino's built-in library for SPI SD-Cards.
 
 SD Card printing is working. This code uses RepRapFirmware flavor of GCODE and does not support Marlin's `!` and `#` syntax.
 
