@@ -91,7 +91,7 @@
 // these are the offsets to the probe relative to the extruder tip (Hotend - Probe)
 #define CFG_X_PROBE_OFFSET_FROM_EXTRUDER 0
 #define CFG_Y_PROBE_OFFSET_FROM_EXTRUDER 0
-#define CFG_Z_PROBE_OFFSET_FROM_EXTRUDER .9
+#define CFG_Z_PROBE_OFFSET_FROM_EXTRUDER 1
 
 #define CFG_X_MAX_LENGTH (CFG_X_MAX_POS - CFG_X_MIN_POS)
 #define CFG_Y_MAX_LENGTH (CFG_Y_MAX_POS - CFG_Y_MIN_POS)

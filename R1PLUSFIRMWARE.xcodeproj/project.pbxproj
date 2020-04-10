@@ -9,12 +9,14 @@
 /* Begin PBXFileReference section */
 		483F2B61232B127B00529C97 /* FIRMWARE */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FIRMWARE; sourceTree = "<group>"; };
 		483F2B62232B24FD00529C97 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		485A9BB12441192100175E5B /* CFG_ROBOR1PLUS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CFG_ROBOR1PLUS.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		483F2B55232B11C100529C97 = {
 			isa = PBXGroup;
 			children = (
+				485A9BB12441192100175E5B /* CFG_ROBOR1PLUS.md */,
 				483F2B62232B24FD00529C97 /* README.md */,
 				483F2B61232B127B00529C97 /* FIRMWARE */,
 			);

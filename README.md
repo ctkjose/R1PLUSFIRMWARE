@@ -31,6 +31,22 @@ Copyright (C) 2011 Camiel Gubbels / Erik van der Zalm<br>
 Thanks to the guys at [RepRap](https://reprap.org/wiki/RepRap) and the community for all the valuable information that made this project possible.
 
 
+## Building and uploading to your printer ##
+
+This firmware was last tested with Arduino IDE 1.8.12.
+
+In Arduino IDE, select your board from the Tools > Board menu.  You should see "Arduino mega or Mega 2560".
+
+Make sure your printer is connected and not in use by a 3D printing software like MatterControl or Cura.
+
+Select the serial USB port your board is connected to in the Tools > Port menu.
+
+Open the `firmware.ino` in Arduino IDE.
+
+Click the Verify button at the top of the window to test for configuration errors. 
+
+Click Upload to flash the firmware to your board.
+
 ## Boards ##
 
 This firmware is exclusive for [RAMPS 1.4](https://reprap.org/wiki/RAMPS_1.4)  boards and similar revisions including 1.6.  As the RAMPS board is build for the Arduino MEGA we are able to make a lot of clean up and optimizations for this hardware combination.
@@ -85,7 +101,26 @@ GCODE [`M20`](https://reprap.org/wiki/G-code#M20:_List_SD_card) supports JSON wi
 Writting to the SD Card is still not implemented.
 
 
+# Bed Leveling #
 
+Auto bed leveling is eneble by default.  A  `G29` command will use a grid mode. By default 9 points will be sampled.
+
+The rectangle to probe is defined in  `config.h` with the following constants:
+```c
+#define LEFT_PROBE_BED_POSITION 15  
+#define RIGHT_PROBE_BED_POSITION 190  //width
+#define BACK_PROBE_BED_POSITION 190	//height
+#define FRONT_PROBE_BED_POSITION 15
+```
+This firmware uses a smaller rectangle for the auto bed leveling feature to support common 220x220 bed films/tapes and removable surfaces. 
+
+Original values for the R1 are:
+```c
+#define LEFT_PROBE_BED_POSITION 15
+#define RIGHT_PROBE_BED_POSITION 205
+#define BACK_PROBE_BED_POSITION 230
+#define FRONT_PROBE_BED_POSITION 20
+```
 
 ## Cura ##
 
