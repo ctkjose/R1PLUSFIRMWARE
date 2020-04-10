@@ -2,6 +2,10 @@
 
 This is a rewrite of the original [Marlin firmware](https://github.com/Robo3D/R1PlusMarlin) that comes with ROBO3D's R1+  3D printers. This project was born from the frustuation of trying to modify the firmware.
 
+As printers and technology becomes more advance so does these firmwares adding so much code not needed for basic mendel printers in particular older ones. 
+
+
+
 ## The  objectives ##
 
 Create a small and simple firmware for basic Mendel/Cartesian printers build on top of RAMPS 1.4 (1.6) and Arduino ATMEGA 2560.  
@@ -12,15 +16,19 @@ Make modofications and hacks easier!!!!!
 
 Optimize for size and performance under Arduino's ATMEGA 2560.
 
+Keep compatibility with slicers and applications like MatterControl and Cura. 
+
+Add modern printer control features as supported by RAMPS.
+
 ## Thanks and Copyrights ##
 
-This project is based on original work from [Marlin](http://marlinfw.org) [frimware](https://github.com/MarlinFirmware/Marlin) and projects like Sprinter and grbl. 
-Copyright (C) 2016 MarlinFirmware 
+This project is based on original work from the [Marlin](http://marlinfw.org) [frimware](https://github.com/MarlinFirmware/Marlin) and projects like Sprinter and grbl.<br>
+Copyright (C) 2016 MarlinFirmware<br>
 
-Marlin is  based on a mashup between [Sprinter](https://github.com/kliment/Sprinter) and [grbl](https://github.com/simen/grbl/tree).
-Copyright (C) 2011 Camiel Gubbels / Erik van der Zalm
+Marlin is  based on a mashup between [Sprinter](https://github.com/kliment/Sprinter) and [grbl](https://github.com/simen/grbl/tree).<br>
+Copyright (C) 2011 Camiel Gubbels / Erik van der Zalm<br>
 
-Thanks to the guys a [RepRap](https://reprap.org/wiki/RepRap) and the community for all the valuable information that made this project possible.
+Thanks to the guys at [RepRap](https://reprap.org/wiki/RepRap) and the community for all the valuable information that made this project possible.
 
 
 ## Boards ##
