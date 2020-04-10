@@ -12,9 +12,22 @@ Make modofications and hacks easier!!!!!
 
 Optimize for size and performance under Arduino's ATMEGA 2560.
 
+## Thanks and Copyrights ##
+
+This project is based on original work from [Marlin](http://marlinfw.org) [frimware](https://github.com/MarlinFirmware/Marlin) and projects like Sprinter and grbl. 
+Copyright (C) 2016 MarlinFirmware 
+
+Marlin is  based on a mashup between [Sprinter](https://github.com/kliment/Sprinter) and [grbl](https://github.com/simen/grbl/tree).
+Copyright (C) 2011 Camiel Gubbels / Erik van der Zalm
+
+Thanks to the guys a [RepRap](https://reprap.org/wiki/RepRap) and the community for all the valuable information that made this project possible.
+
+
 ## Boards ##
 
 This firmware is exclusive for [RAMPS 1.4](https://reprap.org/wiki/RAMPS_1.4)  boards and similar revisions including 1.6.  As the RAMPS board is build for the Arduino MEGA we are able to make a lot of clean up and optimizations for this hardware combination.
+
+
 
 ## Motion and Steppers ##
 
@@ -63,4 +76,14 @@ GCODE [`M20`](https://reprap.org/wiki/G-code#M20:_List_SD_card) supports JSON wi
 
 Writting to the SD Card is still not implemented.
 
+
+
+
+## Cura ##
+
+See [Robo3D/Slicing-Profiles](https://github.com/Robo3D/Slicing-Profiles).
+
+| Setting | Value |
+| -- | -- |
+|  `machine_gcode_flavor`  |  `{ "default_value": "RepRap (Marlin/Sprinter)" }`  |
 

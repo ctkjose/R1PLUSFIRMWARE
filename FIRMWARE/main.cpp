@@ -60,7 +60,7 @@ void setup() {
 	
 	// loads data from EEPROM if available else uses defaults (and resets step acceleration rate)
 	config_RetrieveSettings();
-	config_PrintSettings();
+	//config_PrintSettings();
 	//config_StoreSettings();
 	
 	temp_init(); //temperature.cpp

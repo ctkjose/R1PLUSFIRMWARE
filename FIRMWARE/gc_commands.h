@@ -10,6 +10,7 @@ void gcode_M206();
 //set coordinate mode absolute or relative
 void gcode_G90();
 void gcode_G91();
+void gcode_G92();
 void gcode_M82();
 void gcode_M83();
 
@@ -24,5 +25,5 @@ void gcode_M26();
 void gcode_M27();
 void gcode_M30();
 void gcode_M32();
+void gcode_M119();
 void gcode_M524();
-
